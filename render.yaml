@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: kodameter-support
+    runtime: static
+    buildCommand: mkdir -p public && cp index.html support.html privacy.html style.css kodameter.svg public/
+    staticPublishPath: public
